@@ -1,0 +1,8 @@
+<tbody>
+	 <td><p><%= link_to 'New Pin',new_pin_path %></p></td></a><br>
+  <% @pins.each do |pin| %>
+   <tr>
+    <td><h2><%= link_to pin.title, pin %></h2></td></a>
+   </tr>
+  <% end %>
+</tbody>

@@ -1,5 +1,15 @@
+<div id="pins" class="transitions-enabled infinite-scroll clearfix">
   <% @pins.each do |pin| %>
-	<%= link_to (image_tag pin.image.url(:medium)),  pin %>
-    <h2><%= link_to pin.title, pin %></h2>
-  <% end %>
+  <div class="box ">
+  	<div id="pin_show" class="pin_image">
+		<%= link_to (image_tag pin.image.url), pin %>
+	</div
+	   <a href=""></a><h3><%= link_to pin.title, pin %></h3>
+	   <div id="pins" class="user">
+	   <p>Submitted by</p> <a href=""><%= pin.user.email %></a>
+	   </div>
   </div>
+  <% end %>
+</div>
+</div>
+

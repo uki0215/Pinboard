@@ -4,6 +4,8 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+  
+  
   config.cache_classes = false
 
   # Do not eager load code on boot.
@@ -51,7 +53,6 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
@@ -59,5 +60,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # Needed for Devise
+
+  Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin'
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
  end

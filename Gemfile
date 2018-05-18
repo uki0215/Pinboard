@@ -4,10 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.2.6'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-gem 'paperclip', '~> 6.0'
 gem 'simple_form', '~> 4.0'
-gem 'bootstrap' , '~> 4.1.1'
-
+gem 'jquery-rails'
+gem 'paperclip', '~> 6.0'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery-turbolinks', '~> 2.1'
 
 gem 'rails', '~> 5.2.0'
 gem 'sqlite3'
